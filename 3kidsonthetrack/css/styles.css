@@ -1,0 +1,448 @@
+@font-face{
+    font-family: "BebasNeue";
+    src: url("fonts/BebasNeue-Regular.ttf");
+}
+
+
+
+
+#navbar h1{
+    font-family: "BebasNeue";
+    font-weight: 700;
+    font-size: 32px;
+}
+
+#navbar p{
+    font-family: Helvetica;
+    font-size: 13px;
+    text-align: center;
+}
+
+#navbar{
+    background-color: black;
+}
+#navbar a:hover h1{
+    color: #e62600;
+    transition: all 200ms;
+}
+
+#navbar ul li a{
+    font-family: "BebasNeue";
+    color: white;
+    transition: all 200ms;
+}
+
+
+.nav-link{
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 2px;
+}
+
+#navbar ul li a:hover{
+    color: #e62600;
+}
+
+.logo-user{
+    color: white;
+    margin: 5px;
+    font-size: 15px;
+} 
+
+#top-space{
+    height: 106px;
+}
+
+.social-icon{
+    font-size: 6rem;
+    margin: 12px;
+    color: white;
+    text-decoration: none;
+    transition: all 300ms;
+}
+
+.social-icon:hover{
+    text-shadow: 2px 2px 10px black;
+    font-size: 8rem;
+    text-decoration: none;
+}
+
+#social-box{
+    background-image: url("../img/headphones-guy-red..png");
+    background-size: cover;
+    background-position-y: -150px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 500px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+#social-box h2{
+  font-weight: normal;
+}
+
+ .dropdown-menu{
+   
+    background: #818181;
+    letter-spacing: 2px;
+    text-align: center; 
+    transition: all 300ms;
+    font-size: 14px;
+} 
+
+ .dropdown-menu:hover{
+    background: #D4D4D4;
+} 
+
+.dropdown-menu a:hover{
+    color: #181818 !important;
+    text-decoration: none;
+    background: #D4D4D4 !important;
+} 
+
+
+ .dropdown:hover>.dropdown-menu {
+    display: block;
+    position: absolute;
+  }
+  
+.dropdown>.dropdown-toggle:active {
+      pointer-events: none;
+  }
+   
+
+
+/* LOGIN FORM */
+
+.form-dark .font-small {
+    font-size: 0.8rem; }
+  
+  .form-dark [type="radio"] + label,
+  .form-dark [type="checkbox"] + label {
+    font-size: 0.8rem; }
+  
+  
+  .form-dark .md-form label {
+    color: rgb(20, 20, 20); }
+  
+  .form-dark input[type=email]:focus:not([readonly]) {
+    border-bottom: 1px solid #00C851;
+    -webkit-box-shadow: 0 1px 0 0 #00C851;
+    box-shadow: 0 1px 0 0 #00C851; }
+  
+  .form-dark input[type=email]:focus:not([readonly]) + label {
+    color: #fff; }
+  
+  .form-dark input[type=password]:focus:not([readonly]) {
+    border-bottom: 1px solid #00C851;
+    -webkit-box-shadow: 0 1px 0 0 #00C851;
+    box-shadow: 0 1px 0 0 #00C851; }
+  
+  .form-dark input[type=password]:focus:not([readonly]) + label {
+    color: #fff; }
+  
+  .form-dark input[type="checkbox"] + label:before {
+    content: '';
+    position: absolute;
+    top: 90;
+    left: 0;
+    margin-left: -5px;
+    width: 17px;
+    height: 17px;
+    z-index: 0;
+    border: 1.5px solid rgb(5, 5, 5);
+    border-radius: 1px;
+    margin-top: 2px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+  
+  .form-dark input[type="checkbox"]:checked + label:before {
+    /* top: 530px; */
+    left: -9px;
+    width: 12px;
+    height: 22px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent #00c851 #00c851 transparent;
+    -webkit-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg);
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%; 
+    
+  }
+  
+  .form-dark .modal-header {
+      border-bottom: none;
+  }
+
+  .close {
+    float: right;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 0;
+    margin-top: -25px;
+    color: rgb(99, 99, 99);
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+}
+
+#in, #up, #sign-in, #sign-up, #terms{
+  color: #e62600;
+}
+
+#checkbox624{
+  opacity: 0;
+}
+
+.sign{
+  color: #32383E;
+}
+
+
+.description{
+  color: #32383E; 
+}
+
+
+/*THE BEAT PLAYER*/
+
+:root{
+  --background: #e0e5ec;
+  /* --background: red; */
+  --gray: #797d7f;
+}
+
+.player-container{
+  /* background-image: url("../img/recording-light.png"); */
+  background-color:var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#genre_filter{
+  border: none;
+}
+
+.player{
+  min-width: 300px;
+  /* width: 50%; */
+  height: 50%;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+
+#playlist{
+  background: #fefeff;
+  width: 80%;
+  height: 200px;
+  margin: 10px;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.tracklink:hover{
+  text-decoration: none;
+}
+
+.buy{
+  float: right;
+}
+
+.player__controls{
+  display: flex;
+  width: 95%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+.player__btn{
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 20px 0px #fff9,
+  8px 8px 20px #0001, 5px 5px 6px 0px #0001;
+  color: var(--gray);
+}
+
+.player__btn:active{
+  box-shadow: inset -8px -8px 20px 0px #fff9, inset -6px -6px 20px 0px #fff9,
+  inset 8px 8px 20px #0001, inset 5px 5px 6px 0px #0001;
+}
+
+.player__btn--small{
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.player__audio{
+  visibility: hidden;
+}
+
+.player__title{
+  font-weight: 600;
+  font-size: 0.8em;
+  color: #a1a1a1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.player__album{
+  width: 150px;
+}
+
+.player__img{
+  width: 100%;
+  border-radius: 100%;
+  box-shadow: 2px 2px 7px rgb(163, 177, 198), -2px 2px 7px rgb(163, 177, 198),
+  -8px -8px 50px rgba(255,255,255,0.8), 3px 3px 25px rgba(0, 0, 0, 0.6);
+}
+
+.player__artist{
+  font-size: 1.2em;
+  font-weight: 500;
+  opacity: 0.5;
+  margin: 20px 0px 0px 0px;
+}
+
+.player__song{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1em;
+  opacity: 0.5;
+  margin: 0;
+}
+
+.player__level{
+  width: 80%;
+  /* -webkit-appearance: none; */
+  outline: none;
+  border: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+/* .player__level::-webkit-slider-runnable-track{
+  background-color: #d7dbdd;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.player__level::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  border-radius: 100%;
+  background-color: #5c87fe;
+  height: 18px;
+  width: 18px;
+  margin-top: -7px;
+} */
+
+.audio-duration{
+  margin-top: -30px;
+  display: flex;
+  width: 78%;
+  font-size: 10px;
+  font-weight: 600;
+  color: #a1a1a1;
+  letter-spacing: 1px;
+}
+
+.start{
+  flex: 1;
+}
+
+.player__btn--medium{
+  min-height: 70px;
+  min-width: 70px;
+}
+
+.hide{
+  display: none;
+  opacity: 0.3;
+}
+
+.play_track_btn:hover{
+  cursor: pointer;
+  color: #e62600;
+}
+
+#track_list{
+  width: 100%;
+}
+
+#track_list .current-song a{
+  color:white !important;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(77, 74, 74) 35%, rgba(255,255,255,1) 100%);
+  padding: 3px;
+  width: 100%;
+}
+
+.hp_slide{
+    width:70%;
+    background:white;
+    border-radius: 10px;
+    height:15px;
+}
+.hp_range{
+    width:0;
+    background:#818181;
+    border-radius: 10px;
+    height:15px;
+}
+
+.player__buy{
+  background-color: transparent;
+  border: none;
+}
+
+.player__buy:click{
+  border: none;
+  outline: none;
+}
+
+#cart{
+  border-radius: 10px;
+}
+
+#cart-background{
+  background-color: #e4e4e4;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.remove-link{
+  text-decoration: none;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  /* height: 81px; */
+  /* position: absolute; */
+  /* margin-top: 50px; */
+  bottom: 0;
+  left: 0;
+}
+
+#footer p,
+#footer a{
+  font-size: 10px;
+}
